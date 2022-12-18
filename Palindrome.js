@@ -1,7 +1,7 @@
 function is_palindrome( )
 {
-        let str =document.getElementById("input").value;  
-
+        let str =document.getElementById("input").value; 
+        if (str.length <= 10) {
 	let j = str.length -1;
 	let x,y;
 	
@@ -17,6 +17,11 @@ function is_palindrome( )
 	else
 	{
 	 document.getElementById("prog").innerHTML = " It is a palindrome. ";
-	}	
+	}
+}
+else
+{
+document.getElementById("prog").innerHTML = "Only check upto 10 characters";
+}	
 }
 
