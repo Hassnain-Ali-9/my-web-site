@@ -1,5 +1,7 @@
-function is_palindrome( str )
+function is_palindrome( )
 {
+        let str =document.getElementById("input").value;  
+
 	let j = str.length -1;
 	let x,y;
 	
@@ -10,14 +12,11 @@ function is_palindrome( str )
 	}
 	if( x != y)
 	{
-	 console.log("passed string is not palindrome ");
-	}
+          document.getElementById("prog").innerHTML = " It is not a palindrome.";
+	 }
 	else
 	{
-	 console.log("passed string is palindrome ");
-
-	}
-	
+	 document.getElementById("prog").innerHTML = " It is a palindrome. ";
+	}	
 }
-let test = prompt("Enter String", "");
-is_palindrome(test);
+
